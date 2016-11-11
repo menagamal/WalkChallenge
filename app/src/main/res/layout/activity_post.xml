@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.mena.myapplication.PostActivity">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imcamera"
+        android:src="@mipmap/add_btn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tit"
+        android:background="@drawable/input"
+        android:layout_centerVertical="true"
+        android:hint="Challenge Title .."
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Challenge Description .."
+        android:padding="15dp"
+        android:id="@+id/des"
+        android:layout_below="@+id/tit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/input"
+        android:hint="FootSteps Number .."
+        android:ems="10"
+        android:padding="15dp"
+        android:id="@+id/foot"
+        android:layout_below="@+id/des"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Challenge"
+        android:id="@+id/challenge"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
